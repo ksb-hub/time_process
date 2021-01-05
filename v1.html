@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            background-color: black;
+            position: relative;
+            text-align: center;
+            padding: 18px;
+            font-size: 14px;
+            font-weight: 530;
+            text-decoration: underline;
+        }
+
+        .md1 {
+            width: 100%;
+            height: 615px;
+            background-color: gray;
+
+            background-image: url('https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_1280.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        a:visited {
+            color: white;
+        }
+
+        a:hover {
+            color:lightgray;
+        }
+
+        .md1_head{
+            width: 100%;
+            height: 300px;
+        }
+
+        .md1_logoes{
+            position: absolute;
+            top: 80px;
+            left: 80px;
+        }
+
+        #logo_photo {
+            width: 30px;
+            height: 30px;
+        }
+        #logo_letters{
+            float: right;
+
+            text-align: center;
+            font-size: 25px;
+            color:ivory;
+
+            padding-left: 10px;
+        }
+        .md1_headselector{
+            position: absolute;
+            width:auto;
+            height:auto;
+            left: 42%;
+            top:80px;
+            color:white;
+
+            font-size:17px;
+        }
+        .md1_headselector #md1_slt1{
+            position: relative;
+            width:33.3%;
+            padding:17px;
+        }
+        .md1_headselector #md1_slt2{
+            position: relative;
+            width:33.3%;
+            padding:17px;
+        }
+        .md1_headselector #md1_slt3{
+            position: relative;
+            width:33.3%;
+            padding:17px;
+        }
+        @media screen and (max-width: 1200px){
+            #logo_letters{
+                display:none;
+            }
+            .md1_headselector{
+                left:40%;
+            }
+        }
+        @media screen and (max-width: 760px){
+            .header{
+                display:none;
+            }
+            .md1_headselector{
+                display: none;
+            }
+            .md1_logoes{
+                left:29%;
+            }
+        }
+    </style>
+</head>
+
+<body topmargin="0" leftmargin="0" rightmargin="0">
+    <div class="header">
+        <a href="">
+            포토그램의 코로나19 대응 방안에 대한 최신 정보를 확인하세요.</a>
+    </div>
+    <div class="md1">
+        <div class="md1_head">
+            <div class="md1_logoes">
+                <img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-128.png"
+                    id="logo_photo">
+                <span id="logo_letters">Photogram</span>
+            </div>
+            <div class="md1_headselector">
+                <span id="md1_slt1">추억</span>
+                <span id="md1_slt2">후회</span>
+                <span id="md1_slt3">망각</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
